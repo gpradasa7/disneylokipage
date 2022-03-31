@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  font-family: "Bebas Neue", cursive;
+  margin: 0px;
+  padding: 0px;
+}
+.background {
+  height: 70%;
+  display: flex;
+  position: relative;
+  color: white;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.main-contain {
+  background-color: black;
+  width: 100%;
+  height: 45%;
+  flex-wrap: nowrap;
+  padding: 20px 150px;
+  box-shadow: 0 2px 2px rgba(128, 125, 125, 0.2);
+  margin-bottom: 0px;
+}
+
+.main-contain {
+  font-size: 18px;
+}
+
+.main-contain .logo {
+  max-width: 270px;
+  min-width: 100px;
+  width: 35vw;
+  display: inline-block;
+  margin: 0px auto;
+}
+.main-contain button {
+  background-color: rgb(56, 161, 246);
+  padding: 15px 30px;
+  margin: 15px 0;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+}
+.main-contain button:hover {
+  background-color: rgba(56, 161, 246, 0.911);
+}
+.img-contain {
+  height: 70%;
+  width: 55%;
+  float: right;
+}
+.text {
+  position: relative;
+
+  margin: 0 auto;
+}
+
+.img-contain img {
+  width: 750px;
+  height: 350px;
+  clip-path: circle(40% at center);
+}
+.img-contain img:hover {
+  clip-path: none;
+  border: 0px;
+  box-shadow: 0 0 16px 16px rgba(82, 80, 80, 0.486);
+}
+.more {
+  display: inline-block;
+  margin: 30px 0;
+  align-items: center;
+  background-color: rgb(34, 36, 36);
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+
+  animation: move 0.9s alternate infinite;
+}
+.more:hover {
+  animation: none;
+  background-color: rgba(62, 66, 66, 0.431);
+}
+nav {
+  border-bottom: 2px solid white;
+  display: block;
+  padding: 10px 0px;
+  position: relative;
+  margin: 0 170px;
+}
+#detalles {
+  color: white;
+  margin: 0px;
+  text-decoration: none;
+  padding: 5px;
+}
+#detalles:hover {
+  border-bottom: 5px solid white;
+}
+a:active {
+  overflow: visible;
+}
+h2 {
+  font-size: 20px;
+  position: relative;
+  color: white;
+  margin: 0 170px;
+}
+.description {
+  margin: 0 170px;
+  color: white;
+  letter-spacing: 1px;
+  width: 85%;
+  flex-wrap: nowrap;
+}
+
+.lef-d {
+  padding: 3px;
+  margin: 1px auto;
+
+  display: inline-block;
+  width: 300px;
+  height: 120px;
+
+  flex-wrap: wrap;
+}
+.rig-d {
+  padding: 3px;
+  margin: 1px auto;
+
+  display: inline-block;
+  width: 300px;
+  height: 120px;
+
+  flex-wrap: wrap;
+}
+@keyframes move {
+  0% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
